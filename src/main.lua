@@ -15,19 +15,25 @@ end
 
 function love.load()
   player:load()
-  map = sti("assets/demo.lua", { "box2d" })
-  world = love.physics.newWorld(0, 0)
-  map:box2d_init(world)
+  map = sti("assets/demo.lua", { "bump" })
+  world = bump.newWorld(32)
+  map:bump_init(world)
 
+  -- disable standard layer drawing
   player.layer = map:convertToCustomLayer("player")
   function player.layer:draw()
     player:draw()
   end
+
+  -- tell player abnout the world
+  player.world = world
   
   -- set initial position from map
   local p = findObject(map, "player")
   player.x = p.x
   player.y = p.y
+
+  world:add(player, player.x, player.y, player.w, player.h/2)
 end
 
 function love.update(dt)
