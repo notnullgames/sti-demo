@@ -15,11 +15,15 @@ end
 
 function love.load()
   player:load()
-  map = sti("assets/demo.lua", { "bump" })
+  map = sti("assets/demo.lua", { "subcollisions", "bump" })
   world = bump.newWorld(32)
+
+  -- add new collidable layer that has all the object sub-geometry (collisions from editor)
+  map:subcollisions_init(world)
+
   map:bump_init(world)
 
-  -- disable standard layer drawing
+  -- disable standard layer drawing for player
   player.layer = map:convertToCustomLayer("player")
   function player.layer:draw()
     player:draw()
@@ -33,6 +37,7 @@ function love.load()
   player.x = p.x
   player.y = p.y
 
+  -- add collision-shape for player
   world:add(player, player.x, player.y, player.w, player.h/2)
 end
 
@@ -42,30 +47,30 @@ end
 
 function love.draw()
   map:draw(320 - player.x - (player.w/2), 240 - player.y - (player.h / 2))
+  player:displayInfo()
+  love.graphics.printf(love.timer.getFPS(), 0, 0, 320, "left")
 end
 
 function love.keypressed(key)
-  -- turn keys into directions
   if key == "up" then
-    player.direction = "N"
-    player.walking = true
+    player.vy = -1
   end
   if key == "down" then
-    player.direction = "S"
-    player.walking = true
+    player.vy = 1
   end
   if key == "left" then
-    player.direction = "W"
-    player.walking = true
+    player.vx = -1
   end
   if key == "right" then
-    player.direction = "E"
-    player.walking = true
+    player.vx = 1
   end
 end
 
 function love.keyreleased(key)
-  if key == "up" or key == "down" or key == "left" or key == "right" then
-    player.walking = false
+  if key == "up" or key == "down" then
+    player.vy = 0
+  end
+  if key == "left" or key == "right" then
+    player.vx = 0
   end
 end

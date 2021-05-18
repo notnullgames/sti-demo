@@ -1,15 +1,15 @@
 return {
-  version = "1.5",
+  version = "1.4",
   luaversion = "5.1",
-  tiledversion = "1.6.0",
+  tiledversion = "1.4.3",
   orientation = "orthogonal",
   renderorder = "right-down",
   width = 40,
   height = 40,
   tilewidth = 32,
   tileheight = 32,
-  nextlayerid = 9,
-  nextobjectid = 8,
+  nextlayerid = 10,
+  nextobjectid = 10,
   properties = {},
   tilesets = {
     {
@@ -34,134 +34,9 @@ return {
         height = 64
       },
       properties = {},
-      wangsets = {},
+      terrains = {},
       tilecount = 36,
-      tiles = {
-        {
-          id = 0,
-          objectGroup = {
-            type = "objectgroup",
-            draworder = "index",
-            id = 2,
-            name = "",
-            visible = true,
-            opacity = 1,
-            offsetx = 0,
-            offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
-            properties = {},
-            objects = {
-              {
-                id = 2,
-                name = "",
-                type = "",
-                shape = "rectangle",
-                x = 16,
-                y = 36,
-                width = 32,
-                height = 28,
-                rotation = 0,
-                visible = true,
-                properties = {}
-              }
-            }
-          }
-        },
-        {
-          id = 9,
-          objectGroup = {
-            type = "objectgroup",
-            draworder = "index",
-            id = 2,
-            name = "",
-            visible = true,
-            opacity = 1,
-            offsetx = 0,
-            offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
-            properties = {},
-            objects = {
-              {
-                id = 2,
-                name = "",
-                type = "",
-                shape = "rectangle",
-                x = 16,
-                y = 36,
-                width = 32,
-                height = 28,
-                rotation = 0,
-                visible = true,
-                properties = {}
-              }
-            }
-          }
-        },
-        {
-          id = 18,
-          objectGroup = {
-            type = "objectgroup",
-            draworder = "index",
-            id = 16,
-            name = "",
-            visible = true,
-            opacity = 1,
-            offsetx = 0,
-            offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
-            properties = {},
-            objects = {
-              {
-                id = 16,
-                name = "",
-                type = "",
-                shape = "rectangle",
-                x = 16,
-                y = 36,
-                width = 32,
-                height = 28,
-                rotation = 0,
-                visible = true,
-                properties = {}
-              }
-            }
-          }
-        },
-        {
-          id = 27,
-          objectGroup = {
-            type = "objectgroup",
-            draworder = "index",
-            id = 2,
-            name = "",
-            visible = true,
-            opacity = 1,
-            offsetx = 0,
-            offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
-            properties = {},
-            objects = {
-              {
-                id = 2,
-                name = "",
-                type = "",
-                shape = "rectangle",
-                x = 16,
-                y = 36,
-                width = 32,
-                height = 28,
-                rotation = 0,
-                visible = true,
-                properties = {}
-              }
-            }
-          }
-        }
-      }
+      tiles = {}
     },
     {
       name = "terrain",
@@ -185,1806 +60,7 @@ return {
         height = 32
       },
       properties = {},
-      wangsets = {
-        {
-          name = "Terrains",
-          tile = -1,
-          properties = {},
-          colors = {
-            {
-              color = { 255, 0, 0 },
-              name = "Dark Dirt",
-              probability = 1,
-              tile = 100,
-              properties = {}
-            },
-            {
-              color = { 0, 255, 0 },
-              name = "Red Dirt",
-              probability = 1,
-              tile = 103,
-              properties = {}
-            },
-            {
-              color = { 0, 0, 255 },
-              name = "Black Dirt",
-              probability = 1,
-              tile = 106,
-              properties = {}
-            },
-            {
-              color = { 255, 119, 0 },
-              name = "Grey Dirt",
-              probability = 1,
-              tile = 109,
-              properties = {}
-            },
-            {
-              color = { 0, 233, 255 },
-              name = "Lava",
-              probability = 1,
-              tile = 112,
-              properties = {}
-            },
-            {
-              color = { 255, 0, 216 },
-              name = "Hole",
-              probability = 1,
-              tile = 115,
-              properties = {}
-            },
-            {
-              color = { 255, 255, 0 },
-              name = "Red Hole",
-              probability = 1,
-              tile = 118,
-              properties = {}
-            },
-            {
-              color = { 160, 0, 255 },
-              name = "Black Hole",
-              probability = 1,
-              tile = 121,
-              properties = {}
-            },
-            {
-              color = { 0, 255, 161 },
-              name = "Water",
-              probability = 1,
-              tile = 124,
-              properties = {}
-            },
-            {
-              color = { 255, 168, 168 },
-              name = "Full Dirt",
-              probability = 1,
-              tile = 537,
-              properties = {}
-            },
-            {
-              color = { 180, 168, 255 },
-              name = "Clean Dirt",
-              probability = 1,
-              tile = 537,
-              properties = {}
-            },
-            {
-              color = { 150, 255, 167 },
-              name = "Trans Dirt",
-              probability = 1,
-              tile = 97,
-              properties = {}
-            },
-            {
-              color = { 142, 120, 72 },
-              name = "Grass",
-              probability = 1,
-              tile = 289,
-              properties = {}
-            },
-            {
-              color = { 90, 90, 90 },
-              name = "Dark Grass",
-              probability = 1,
-              tile = 295,
-              properties = {}
-            },
-            {
-              color = { 14, 122, 70 },
-              name = "Short Grass",
-              probability = 1,
-              tile = 298,
-              properties = {}
-            },
-            {
-              color = { 0, 0, 0, 101 },
-              name = "Long Grass",
-              probability = 1,
-              tile = 301,
-              properties = {}
-            },
-            {
-              color = { 105, 198, 103 },
-              name = "Wheat",
-              probability = 1,
-              tile = 304,
-              properties = {}
-            },
-            {
-              color = { 255, 81, 115 },
-              name = "Earth",
-              probability = 1,
-              tile = 676,
-              properties = {}
-            },
-            {
-              color = { 41, 236, 74 },
-              name = "Sand",
-              probability = 1,
-              tile = 307,
-              properties = {}
-            },
-            {
-              color = { 171, 186, 205 },
-              name = "Sand Water",
-              probability = 1,
-              tile = 310,
-              properties = {}
-            },
-            {
-              color = { 227, 251, 242 },
-              name = "Snow",
-              probability = 1,
-              tile = 499,
-              properties = {}
-            },
-            {
-              color = { 194, 124, 70 },
-              name = "Snow Water",
-              probability = 1,
-              tile = 662,
-              properties = {}
-            },
-            {
-              color = { 27, 248, 84 },
-              name = "Snow Ice",
-              probability = 1,
-              tile = 502,
-              properties = {}
-            },
-            {
-              color = { 141, 231, 232 },
-              name = "Ice",
-              probability = 1,
-              tile = 496,
-              properties = {}
-            },
-            {
-              color = { 46, 90, 118 },
-              name = "Brick Road",
-              probability = 1,
-              tile = 491,
-              properties = {}
-            },
-            {
-              color = { 159, 51, 99 },
-              name = "Sewer",
-              probability = 1,
-              tile = 484,
-              properties = {}
-            },
-            {
-              color = { 102, 154, 201 },
-              name = "Sewer Water",
-              probability = 1,
-              tile = 481,
-              properties = {}
-            }
-          },
-          wangtiles = {
-            {
-              wangid = { 0, 12, 0, 0, 0, 12, 0, 12 },
-              tileid = 1
-            },
-            {
-              wangid = { 0, 12, 0, 12, 0, 0, 0, 12 },
-              tileid = 2
-            },
-            {
-              wangid = { 0, 1, 0, 0, 0, 1, 0, 1 },
-              tileid = 4
-            },
-            {
-              wangid = { 0, 1, 0, 1, 0, 0, 0, 1 },
-              tileid = 5
-            },
-            {
-              wangid = { 0, 2, 0, 0, 0, 2, 0, 2 },
-              tileid = 7
-            },
-            {
-              wangid = { 0, 2, 0, 2, 0, 0, 0, 2 },
-              tileid = 8
-            },
-            {
-              wangid = { 0, 4, 0, 0, 0, 4, 0, 4 },
-              tileid = 13
-            },
-            {
-              wangid = { 0, 4, 0, 4, 0, 0, 0, 4 },
-              tileid = 14
-            },
-            {
-              wangid = { 0, 5, 0, 0, 0, 5, 0, 5 },
-              tileid = 16
-            },
-            {
-              wangid = { 0, 5, 0, 5, 0, 0, 0, 5 },
-              tileid = 17
-            },
-            {
-              wangid = { 0, 6, 0, 0, 0, 6, 0, 6 },
-              tileid = 19
-            },
-            {
-              wangid = { 0, 6, 0, 6, 0, 0, 0, 6 },
-              tileid = 20
-            },
-            {
-              wangid = { 0, 7, 0, 0, 0, 7, 0, 7 },
-              tileid = 22
-            },
-            {
-              wangid = { 0, 7, 0, 7, 0, 0, 0, 7 },
-              tileid = 23
-            },
-            {
-              wangid = { 0, 8, 0, 0, 0, 8, 0, 8 },
-              tileid = 25
-            },
-            {
-              wangid = { 0, 8, 0, 8, 0, 0, 0, 8 },
-              tileid = 26
-            },
-            {
-              wangid = { 0, 9, 0, 0, 0, 9, 0, 9 },
-              tileid = 28
-            },
-            {
-              wangid = { 0, 9, 0, 9, 0, 0, 0, 9 },
-              tileid = 29
-            },
-            {
-              wangid = { 0, 0, 0, 12, 0, 12, 0, 12 },
-              tileid = 33
-            },
-            {
-              wangid = { 0, 12, 0, 12, 0, 12, 0, 0 },
-              tileid = 34
-            },
-            {
-              wangid = { 0, 0, 0, 1, 0, 1, 0, 1 },
-              tileid = 36
-            },
-            {
-              wangid = { 0, 1, 0, 1, 0, 1, 0, 0 },
-              tileid = 37
-            },
-            {
-              wangid = { 0, 0, 0, 2, 0, 2, 0, 2 },
-              tileid = 39
-            },
-            {
-              wangid = { 0, 2, 0, 2, 0, 2, 0, 0 },
-              tileid = 40
-            },
-            {
-              wangid = { 0, 0, 0, 4, 0, 4, 0, 4 },
-              tileid = 45
-            },
-            {
-              wangid = { 0, 4, 0, 4, 0, 4, 0, 0 },
-              tileid = 46
-            },
-            {
-              wangid = { 0, 0, 0, 5, 0, 5, 0, 5 },
-              tileid = 48
-            },
-            {
-              wangid = { 0, 5, 0, 5, 0, 5, 0, 0 },
-              tileid = 49
-            },
-            {
-              wangid = { 0, 0, 0, 6, 0, 6, 0, 6 },
-              tileid = 51
-            },
-            {
-              wangid = { 0, 6, 0, 6, 0, 6, 0, 0 },
-              tileid = 52
-            },
-            {
-              wangid = { 0, 0, 0, 7, 0, 7, 0, 7 },
-              tileid = 54
-            },
-            {
-              wangid = { 0, 7, 0, 7, 0, 7, 0, 0 },
-              tileid = 55
-            },
-            {
-              wangid = { 0, 0, 0, 8, 0, 8, 0, 8 },
-              tileid = 57
-            },
-            {
-              wangid = { 0, 8, 0, 8, 0, 8, 0, 0 },
-              tileid = 58
-            },
-            {
-              wangid = { 0, 0, 0, 9, 0, 9, 0, 9 },
-              tileid = 60
-            },
-            {
-              wangid = { 0, 9, 0, 9, 0, 9, 0, 0 },
-              tileid = 61
-            },
-            {
-              wangid = { 0, 0, 0, 12, 0, 0, 0, 0 },
-              tileid = 64
-            },
-            {
-              wangid = { 0, 0, 0, 12, 0, 12, 0, 0 },
-              tileid = 65
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 12, 0, 0 },
-              tileid = 66
-            },
-            {
-              wangid = { 0, 0, 0, 1, 0, 0, 0, 0 },
-              tileid = 67
-            },
-            {
-              wangid = { 0, 0, 0, 1, 0, 1, 0, 0 },
-              tileid = 68
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 1, 0, 0 },
-              tileid = 69
-            },
-            {
-              wangid = { 0, 0, 0, 2, 0, 0, 0, 0 },
-              tileid = 70
-            },
-            {
-              wangid = { 0, 0, 0, 2, 0, 2, 0, 0 },
-              tileid = 71
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 2, 0, 0 },
-              tileid = 72
-            },
-            {
-              wangid = { 0, 0, 0, 3, 0, 0, 0, 0 },
-              tileid = 73
-            },
-            {
-              wangid = { 0, 0, 0, 3, 0, 3, 0, 0 },
-              tileid = 74
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 3, 0, 0 },
-              tileid = 75
-            },
-            {
-              wangid = { 0, 0, 0, 4, 0, 0, 0, 0 },
-              tileid = 76
-            },
-            {
-              wangid = { 0, 0, 0, 4, 0, 4, 0, 0 },
-              tileid = 77
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 4, 0, 0 },
-              tileid = 78
-            },
-            {
-              wangid = { 0, 0, 0, 5, 0, 0, 0, 0 },
-              tileid = 79
-            },
-            {
-              wangid = { 0, 0, 0, 5, 0, 5, 0, 0 },
-              tileid = 80
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 5, 0, 0 },
-              tileid = 81
-            },
-            {
-              wangid = { 0, 0, 0, 6, 0, 0, 0, 0 },
-              tileid = 82
-            },
-            {
-              wangid = { 0, 0, 0, 6, 0, 6, 0, 0 },
-              tileid = 83
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 6, 0, 0 },
-              tileid = 84
-            },
-            {
-              wangid = { 0, 0, 0, 7, 0, 0, 0, 0 },
-              tileid = 85
-            },
-            {
-              wangid = { 0, 0, 0, 7, 0, 7, 0, 0 },
-              tileid = 86
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 7, 0, 0 },
-              tileid = 87
-            },
-            {
-              wangid = { 0, 0, 0, 8, 0, 0, 0, 0 },
-              tileid = 88
-            },
-            {
-              wangid = { 0, 0, 0, 8, 0, 8, 0, 0 },
-              tileid = 89
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 8, 0, 0 },
-              tileid = 90
-            },
-            {
-              wangid = { 0, 0, 0, 9, 0, 0, 0, 0 },
-              tileid = 91
-            },
-            {
-              wangid = { 0, 0, 0, 9, 0, 9, 0, 0 },
-              tileid = 92
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 9, 0, 0 },
-              tileid = 93
-            },
-            {
-              wangid = { 0, 12, 0, 12, 0, 0, 0, 0 },
-              tileid = 96
-            },
-            {
-              wangid = { 0, 12, 0, 12, 0, 12, 0, 12 },
-              tileid = 97
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 12, 0, 12 },
-              tileid = 98
-            },
-            {
-              wangid = { 0, 1, 0, 1, 0, 0, 0, 0 },
-              tileid = 99
-            },
-            {
-              wangid = { 0, 1, 0, 1, 0, 1, 0, 1 },
-              tileid = 100
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 1, 0, 1 },
-              tileid = 101
-            },
-            {
-              wangid = { 0, 2, 0, 2, 0, 0, 0, 0 },
-              tileid = 102
-            },
-            {
-              wangid = { 0, 2, 0, 2, 0, 2, 0, 2 },
-              tileid = 103
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 2, 0, 2 },
-              tileid = 104
-            },
-            {
-              wangid = { 0, 3, 0, 3, 0, 0, 0, 0 },
-              tileid = 105
-            },
-            {
-              wangid = { 0, 3, 0, 3, 0, 3, 0, 3 },
-              tileid = 106
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 3, 0, 3 },
-              tileid = 107
-            },
-            {
-              wangid = { 0, 4, 0, 4, 0, 0, 0, 0 },
-              tileid = 108
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 4, 0, 4 },
-              tileid = 110
-            },
-            {
-              wangid = { 0, 5, 0, 5, 0, 0, 0, 0 },
-              tileid = 111
-            },
-            {
-              wangid = { 0, 5, 0, 5, 0, 5, 0, 5 },
-              tileid = 112
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 5, 0, 5 },
-              tileid = 113
-            },
-            {
-              wangid = { 0, 6, 0, 6, 0, 0, 0, 0 },
-              tileid = 114
-            },
-            {
-              wangid = { 0, 6, 0, 6, 0, 6, 0, 6 },
-              tileid = 115
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 6, 0, 6 },
-              tileid = 116
-            },
-            {
-              wangid = { 0, 7, 0, 7, 0, 0, 0, 0 },
-              tileid = 117
-            },
-            {
-              wangid = { 0, 7, 0, 7, 0, 7, 0, 7 },
-              tileid = 118
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 7, 0, 7 },
-              tileid = 119
-            },
-            {
-              wangid = { 0, 8, 0, 8, 0, 0, 0, 0 },
-              tileid = 120
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 8, 0, 8 },
-              tileid = 122
-            },
-            {
-              wangid = { 0, 9, 0, 9, 0, 0, 0, 0 },
-              tileid = 123
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 9, 0, 9 },
-              tileid = 125
-            },
-            {
-              wangid = { 0, 12, 0, 0, 0, 0, 0, 0 },
-              tileid = 128
-            },
-            {
-              wangid = { 0, 12, 0, 0, 0, 0, 0, 12 },
-              tileid = 129
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 12 },
-              tileid = 130
-            },
-            {
-              wangid = { 0, 1, 0, 0, 0, 0, 0, 0 },
-              tileid = 131
-            },
-            {
-              wangid = { 0, 1, 0, 0, 0, 0, 0, 1 },
-              tileid = 132
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 1 },
-              tileid = 133
-            },
-            {
-              wangid = { 0, 2, 0, 0, 0, 0, 0, 0 },
-              tileid = 134
-            },
-            {
-              wangid = { 0, 2, 0, 0, 0, 0, 0, 2 },
-              tileid = 135
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 2 },
-              tileid = 136
-            },
-            {
-              wangid = { 0, 3, 0, 0, 0, 0, 0, 0 },
-              tileid = 137
-            },
-            {
-              wangid = { 0, 3, 0, 0, 0, 0, 0, 3 },
-              tileid = 138
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 3 },
-              tileid = 139
-            },
-            {
-              wangid = { 0, 4, 0, 0, 0, 0, 0, 0 },
-              tileid = 140
-            },
-            {
-              wangid = { 0, 4, 0, 0, 0, 0, 0, 4 },
-              tileid = 141
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 4 },
-              tileid = 142
-            },
-            {
-              wangid = { 0, 5, 0, 0, 0, 0, 0, 0 },
-              tileid = 143
-            },
-            {
-              wangid = { 0, 5, 0, 0, 0, 0, 0, 5 },
-              tileid = 144
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 5 },
-              tileid = 145
-            },
-            {
-              wangid = { 0, 6, 0, 0, 0, 0, 0, 0 },
-              tileid = 146
-            },
-            {
-              wangid = { 0, 6, 0, 0, 0, 0, 0, 6 },
-              tileid = 147
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 6 },
-              tileid = 148
-            },
-            {
-              wangid = { 0, 7, 0, 0, 0, 0, 0, 0 },
-              tileid = 149
-            },
-            {
-              wangid = { 0, 7, 0, 0, 0, 0, 0, 7 },
-              tileid = 150
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 7 },
-              tileid = 151
-            },
-            {
-              wangid = { 0, 8, 0, 0, 0, 0, 0, 0 },
-              tileid = 152
-            },
-            {
-              wangid = { 0, 8, 0, 0, 0, 0, 0, 8 },
-              tileid = 153
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 8 },
-              tileid = 154
-            },
-            {
-              wangid = { 0, 9, 0, 0, 0, 0, 0, 0 },
-              tileid = 155
-            },
-            {
-              wangid = { 0, 9, 0, 0, 0, 0, 0, 9 },
-              tileid = 156
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 9 },
-              tileid = 157
-            },
-            {
-              wangid = { 0, 10, 0, 10, 0, 10, 0, 10 },
-              tileid = 160
-            },
-            {
-              wangid = { 0, 10, 0, 10, 0, 10, 0, 10 },
-              tileid = 161
-            },
-            {
-              wangid = { 0, 10, 0, 10, 0, 10, 0, 10 },
-              tileid = 162
-            },
-            {
-              wangid = { 0, 1, 0, 1, 0, 1, 0, 1 },
-              tileid = 163
-            },
-            {
-              wangid = { 0, 1, 0, 1, 0, 1, 0, 1 },
-              tileid = 164
-            },
-            {
-              wangid = { 0, 1, 0, 1, 0, 1, 0, 1 },
-              tileid = 165
-            },
-            {
-              wangid = { 0, 2, 0, 2, 0, 2, 0, 2 },
-              tileid = 166
-            },
-            {
-              wangid = { 0, 2, 0, 2, 0, 2, 0, 2 },
-              tileid = 167
-            },
-            {
-              wangid = { 0, 2, 0, 2, 0, 2, 0, 2 },
-              tileid = 168
-            },
-            {
-              wangid = { 0, 3, 0, 3, 0, 3, 0, 3 },
-              tileid = 169
-            },
-            {
-              wangid = { 0, 3, 0, 3, 0, 3, 0, 3 },
-              tileid = 170
-            },
-            {
-              wangid = { 0, 3, 0, 3, 0, 3, 0, 3 },
-              tileid = 171
-            },
-            {
-              wangid = { 0, 4, 0, 4, 0, 4, 0, 4 },
-              tileid = 172
-            },
-            {
-              wangid = { 0, 4, 0, 4, 0, 4, 0, 4 },
-              tileid = 173
-            },
-            {
-              wangid = { 0, 4, 0, 4, 0, 4, 0, 4 },
-              tileid = 174
-            },
-            {
-              wangid = { 0, 5, 0, 5, 0, 5, 0, 5 },
-              tileid = 175
-            },
-            {
-              wangid = { 0, 5, 0, 5, 0, 5, 0, 5 },
-              tileid = 176
-            },
-            {
-              wangid = { 0, 5, 0, 5, 0, 5, 0, 5 },
-              tileid = 177
-            },
-            {
-              wangid = { 0, 8, 0, 8, 0, 8, 0, 8 },
-              tileid = 184
-            },
-            {
-              wangid = { 0, 8, 0, 8, 0, 8, 0, 8 },
-              tileid = 185
-            },
-            {
-              wangid = { 0, 8, 0, 8, 0, 8, 0, 8 },
-              tileid = 186
-            },
-            {
-              wangid = { 0, 9, 0, 9, 0, 9, 0, 9 },
-              tileid = 187
-            },
-            {
-              wangid = { 0, 9, 0, 9, 0, 9, 0, 9 },
-              tileid = 188
-            },
-            {
-              wangid = { 0, 9, 0, 9, 0, 9, 0, 9 },
-              tileid = 189
-            },
-            {
-              wangid = { 0, 13, 0, 0, 0, 13, 0, 13 },
-              tileid = 193
-            },
-            {
-              wangid = { 0, 13, 0, 13, 0, 0, 0, 13 },
-              tileid = 194
-            },
-            {
-              wangid = { 0, 13, 0, 0, 0, 13, 0, 13 },
-              tileid = 196
-            },
-            {
-              wangid = { 0, 13, 0, 13, 0, 0, 0, 13 },
-              tileid = 197
-            },
-            {
-              wangid = { 0, 14, 0, 0, 0, 14, 0, 14 },
-              tileid = 199
-            },
-            {
-              wangid = { 0, 14, 0, 14, 0, 0, 0, 14 },
-              tileid = 200
-            },
-            {
-              wangid = { 0, 15, 0, 0, 0, 15, 0, 15 },
-              tileid = 202
-            },
-            {
-              wangid = { 0, 15, 0, 15, 0, 0, 0, 15 },
-              tileid = 203
-            },
-            {
-              wangid = { 0, 16, 0, 0, 0, 16, 0, 16 },
-              tileid = 205
-            },
-            {
-              wangid = { 0, 16, 0, 16, 0, 0, 0, 16 },
-              tileid = 206
-            },
-            {
-              wangid = { 0, 17, 0, 0, 0, 17, 0, 17 },
-              tileid = 208
-            },
-            {
-              wangid = { 0, 17, 0, 17, 0, 0, 0, 17 },
-              tileid = 209
-            },
-            {
-              wangid = { 0, 19, 0, 0, 0, 19, 0, 19 },
-              tileid = 211
-            },
-            {
-              wangid = { 0, 19, 0, 19, 0, 0, 0, 19 },
-              tileid = 212
-            },
-            {
-              wangid = { 0, 20, 0, 0, 0, 20, 0, 20 },
-              tileid = 214
-            },
-            {
-              wangid = { 0, 20, 0, 20, 0, 0, 0, 20 },
-              tileid = 215
-            },
-            {
-              wangid = { 0, 0, 0, 13, 0, 13, 0, 13 },
-              tileid = 225
-            },
-            {
-              wangid = { 0, 13, 0, 13, 0, 13, 0, 0 },
-              tileid = 226
-            },
-            {
-              wangid = { 0, 0, 0, 13, 0, 13, 0, 13 },
-              tileid = 228
-            },
-            {
-              wangid = { 0, 13, 0, 13, 0, 13, 0, 0 },
-              tileid = 229
-            },
-            {
-              wangid = { 0, 0, 0, 14, 0, 14, 0, 14 },
-              tileid = 231
-            },
-            {
-              wangid = { 0, 14, 0, 14, 0, 14, 0, 0 },
-              tileid = 232
-            },
-            {
-              wangid = { 0, 0, 0, 15, 0, 15, 0, 15 },
-              tileid = 234
-            },
-            {
-              wangid = { 0, 15, 0, 15, 0, 15, 0, 0 },
-              tileid = 235
-            },
-            {
-              wangid = { 0, 0, 0, 16, 0, 16, 0, 16 },
-              tileid = 237
-            },
-            {
-              wangid = { 0, 16, 0, 16, 0, 16, 0, 0 },
-              tileid = 238
-            },
-            {
-              wangid = { 0, 0, 0, 17, 0, 17, 0, 17 },
-              tileid = 240
-            },
-            {
-              wangid = { 0, 17, 0, 17, 0, 17, 0, 0 },
-              tileid = 241
-            },
-            {
-              wangid = { 0, 0, 0, 19, 0, 19, 0, 19 },
-              tileid = 243
-            },
-            {
-              wangid = { 0, 19, 0, 19, 0, 19, 0, 0 },
-              tileid = 244
-            },
-            {
-              wangid = { 0, 0, 0, 20, 0, 20, 0, 20 },
-              tileid = 246
-            },
-            {
-              wangid = { 0, 20, 0, 20, 0, 20, 0, 0 },
-              tileid = 247
-            },
-            {
-              wangid = { 0, 0, 0, 13, 0, 0, 0, 0 },
-              tileid = 256
-            },
-            {
-              wangid = { 0, 0, 0, 13, 0, 13, 0, 0 },
-              tileid = 257
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 13, 0, 0 },
-              tileid = 258
-            },
-            {
-              wangid = { 0, 0, 0, 13, 0, 0, 0, 0 },
-              tileid = 259
-            },
-            {
-              wangid = { 0, 0, 0, 13, 0, 13, 0, 0 },
-              tileid = 260
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 13, 0, 0 },
-              tileid = 261
-            },
-            {
-              wangid = { 0, 0, 0, 14, 0, 0, 0, 0 },
-              tileid = 262
-            },
-            {
-              wangid = { 0, 0, 0, 14, 0, 14, 0, 0 },
-              tileid = 263
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 14, 0, 0 },
-              tileid = 264
-            },
-            {
-              wangid = { 0, 0, 0, 15, 0, 0, 0, 0 },
-              tileid = 265
-            },
-            {
-              wangid = { 0, 0, 0, 15, 0, 15, 0, 0 },
-              tileid = 266
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 15, 0, 0 },
-              tileid = 267
-            },
-            {
-              wangid = { 0, 0, 0, 16, 0, 0, 0, 0 },
-              tileid = 268
-            },
-            {
-              wangid = { 0, 0, 0, 16, 0, 16, 0, 0 },
-              tileid = 269
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 16, 0, 0 },
-              tileid = 270
-            },
-            {
-              wangid = { 0, 0, 0, 17, 0, 0, 0, 0 },
-              tileid = 271
-            },
-            {
-              wangid = { 0, 0, 0, 17, 0, 17, 0, 0 },
-              tileid = 272
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 17, 0, 0 },
-              tileid = 273
-            },
-            {
-              wangid = { 0, 0, 0, 19, 0, 0, 0, 0 },
-              tileid = 274
-            },
-            {
-              wangid = { 0, 0, 0, 19, 0, 19, 0, 0 },
-              tileid = 275
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 19, 0, 0 },
-              tileid = 276
-            },
-            {
-              wangid = { 0, 0, 0, 20, 0, 0, 0, 0 },
-              tileid = 277
-            },
-            {
-              wangid = { 0, 0, 0, 20, 0, 20, 0, 0 },
-              tileid = 278
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 20, 0, 0 },
-              tileid = 279
-            },
-            {
-              wangid = { 0, 13, 0, 13, 0, 0, 0, 0 },
-              tileid = 288
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 13, 0, 13 },
-              tileid = 290
-            },
-            {
-              wangid = { 0, 13, 0, 13, 0, 0, 0, 0 },
-              tileid = 291
-            },
-            {
-              wangid = { 0, 13, 0, 13, 0, 13, 0, 13 },
-              tileid = 292
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 13, 0, 13 },
-              tileid = 293
-            },
-            {
-              wangid = { 0, 14, 0, 14, 0, 0, 0, 0 },
-              tileid = 294
-            },
-            {
-              wangid = { 0, 14, 0, 14, 0, 14, 0, 14 },
-              tileid = 295
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 14, 0, 14 },
-              tileid = 296
-            },
-            {
-              wangid = { 0, 15, 0, 15, 0, 0, 0, 0 },
-              tileid = 297
-            },
-            {
-              wangid = { 0, 15, 0, 15, 0, 15, 0, 15 },
-              tileid = 298
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 15, 0, 15 },
-              tileid = 299
-            },
-            {
-              wangid = { 0, 16, 0, 16, 0, 0, 0, 0 },
-              tileid = 300
-            },
-            {
-              wangid = { 0, 16, 0, 16, 0, 16, 0, 16 },
-              tileid = 301
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 16, 0, 16 },
-              tileid = 302
-            },
-            {
-              wangid = { 0, 17, 0, 17, 0, 0, 0, 0 },
-              tileid = 303
-            },
-            {
-              wangid = { 0, 17, 0, 17, 0, 17, 0, 17 },
-              tileid = 304
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 17, 0, 17 },
-              tileid = 305
-            },
-            {
-              wangid = { 0, 19, 0, 19, 0, 0, 0, 0 },
-              tileid = 306
-            },
-            {
-              wangid = { 0, 19, 0, 19, 0, 19, 0, 19 },
-              tileid = 307
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 19, 0, 19 },
-              tileid = 308
-            },
-            {
-              wangid = { 0, 20, 0, 20, 0, 0, 0, 0 },
-              tileid = 309
-            },
-            {
-              wangid = { 0, 20, 0, 20, 0, 20, 0, 20 },
-              tileid = 310
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 20, 0, 20 },
-              tileid = 311
-            },
-            {
-              wangid = { 0, 13, 0, 0, 0, 0, 0, 0 },
-              tileid = 320
-            },
-            {
-              wangid = { 0, 13, 0, 0, 0, 0, 0, 13 },
-              tileid = 321
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 13 },
-              tileid = 322
-            },
-            {
-              wangid = { 0, 13, 0, 0, 0, 0, 0, 0 },
-              tileid = 323
-            },
-            {
-              wangid = { 0, 13, 0, 0, 0, 0, 0, 13 },
-              tileid = 324
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 13 },
-              tileid = 325
-            },
-            {
-              wangid = { 0, 14, 0, 0, 0, 0, 0, 0 },
-              tileid = 326
-            },
-            {
-              wangid = { 0, 14, 0, 0, 0, 0, 0, 14 },
-              tileid = 327
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 14 },
-              tileid = 328
-            },
-            {
-              wangid = { 0, 15, 0, 0, 0, 0, 0, 0 },
-              tileid = 329
-            },
-            {
-              wangid = { 0, 15, 0, 0, 0, 0, 0, 15 },
-              tileid = 330
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 15 },
-              tileid = 331
-            },
-            {
-              wangid = { 0, 16, 0, 0, 0, 0, 0, 0 },
-              tileid = 332
-            },
-            {
-              wangid = { 0, 16, 0, 0, 0, 0, 0, 16 },
-              tileid = 333
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 16 },
-              tileid = 334
-            },
-            {
-              wangid = { 0, 17, 0, 0, 0, 0, 0, 0 },
-              tileid = 335
-            },
-            {
-              wangid = { 0, 17, 0, 0, 0, 0, 0, 17 },
-              tileid = 336
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 17 },
-              tileid = 337
-            },
-            {
-              wangid = { 0, 19, 0, 0, 0, 0, 0, 0 },
-              tileid = 338
-            },
-            {
-              wangid = { 0, 19, 0, 0, 0, 0, 0, 19 },
-              tileid = 339
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 19 },
-              tileid = 340
-            },
-            {
-              wangid = { 0, 20, 0, 0, 0, 0, 0, 0 },
-              tileid = 341
-            },
-            {
-              wangid = { 0, 20, 0, 0, 0, 0, 0, 20 },
-              tileid = 342
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 20 },
-              tileid = 343
-            },
-            {
-              wangid = { 0, 13, 0, 13, 0, 13, 0, 13 },
-              tileid = 352
-            },
-            {
-              wangid = { 0, 13, 0, 13, 0, 13, 0, 13 },
-              tileid = 353
-            },
-            {
-              wangid = { 0, 13, 0, 13, 0, 13, 0, 13 },
-              tileid = 354
-            },
-            {
-              wangid = { 0, 14, 0, 14, 0, 14, 0, 14 },
-              tileid = 358
-            },
-            {
-              wangid = { 0, 14, 0, 14, 0, 14, 0, 14 },
-              tileid = 359
-            },
-            {
-              wangid = { 0, 14, 0, 14, 0, 14, 0, 14 },
-              tileid = 360
-            },
-            {
-              wangid = { 0, 19, 0, 19, 0, 19, 0, 19 },
-              tileid = 370
-            },
-            {
-              wangid = { 0, 19, 0, 19, 0, 19, 0, 19 },
-              tileid = 371
-            },
-            {
-              wangid = { 0, 19, 0, 19, 0, 19, 0, 19 },
-              tileid = 372
-            },
-            {
-              wangid = { 0, 27, 0, 0, 0, 27, 0, 27 },
-              tileid = 385
-            },
-            {
-              wangid = { 0, 27, 0, 27, 0, 0, 0, 27 },
-              tileid = 386
-            },
-            {
-              wangid = { 0, 26, 0, 0, 0, 26, 0, 26 },
-              tileid = 388
-            },
-            {
-              wangid = { 0, 26, 0, 26, 0, 0, 0, 26 },
-              tileid = 389
-            },
-            {
-              wangid = { 0, 25, 0, 0, 0, 25, 0, 25 },
-              tileid = 395
-            },
-            {
-              wangid = { 0, 25, 0, 0, 0, 0, 0, 25 },
-              tileid = 396
-            },
-            {
-              wangid = { 0, 25, 0, 25, 0, 0, 0, 25 },
-              tileid = 397
-            },
-            {
-              wangid = { 0, 25, 0, 25, 0, 25, 0, 25 },
-              tileid = 398
-            },
-            {
-              wangid = { 0, 24, 0, 0, 0, 24, 0, 24 },
-              tileid = 400
-            },
-            {
-              wangid = { 0, 24, 0, 24, 0, 0, 0, 24 },
-              tileid = 401
-            },
-            {
-              wangid = { 0, 21, 0, 0, 0, 21, 0, 21 },
-              tileid = 403
-            },
-            {
-              wangid = { 0, 21, 0, 21, 0, 0, 0, 21 },
-              tileid = 404
-            },
-            {
-              wangid = { 0, 23, 0, 0, 0, 23, 0, 23 },
-              tileid = 406
-            },
-            {
-              wangid = { 0, 23, 0, 23, 0, 0, 0, 23 },
-              tileid = 407
-            },
-            {
-              wangid = { 0, 0, 0, 27, 0, 27, 0, 27 },
-              tileid = 417
-            },
-            {
-              wangid = { 0, 27, 0, 27, 0, 27, 0, 0 },
-              tileid = 418
-            },
-            {
-              wangid = { 0, 0, 0, 26, 0, 26, 0, 26 },
-              tileid = 420
-            },
-            {
-              wangid = { 0, 26, 0, 26, 0, 26, 0, 0 },
-              tileid = 421
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 25, 0, 25 },
-              tileid = 427
-            },
-            {
-              wangid = { 0, 25, 0, 25, 0, 0, 0, 0 },
-              tileid = 429
-            },
-            {
-              wangid = { 0, 25, 0, 25, 0, 25, 0, 25 },
-              tileid = 430
-            },
-            {
-              wangid = { 0, 0, 0, 24, 0, 24, 0, 24 },
-              tileid = 432
-            },
-            {
-              wangid = { 0, 24, 0, 24, 0, 24, 0, 0 },
-              tileid = 433
-            },
-            {
-              wangid = { 0, 0, 0, 21, 0, 21, 0, 21 },
-              tileid = 435
-            },
-            {
-              wangid = { 0, 21, 0, 21, 0, 21, 0, 0 },
-              tileid = 436
-            },
-            {
-              wangid = { 0, 0, 0, 23, 0, 23, 0, 23 },
-              tileid = 438
-            },
-            {
-              wangid = { 0, 23, 0, 23, 0, 23, 0, 0 },
-              tileid = 439
-            },
-            {
-              wangid = { 0, 0, 0, 27, 0, 0, 0, 0 },
-              tileid = 448
-            },
-            {
-              wangid = { 0, 0, 0, 27, 0, 27, 0, 0 },
-              tileid = 449
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 27, 0, 0 },
-              tileid = 450
-            },
-            {
-              wangid = { 0, 0, 0, 26, 0, 0, 0, 0 },
-              tileid = 451
-            },
-            {
-              wangid = { 0, 0, 0, 26, 0, 26, 0, 0 },
-              tileid = 452
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 26, 0, 0 },
-              tileid = 453
-            },
-            {
-              wangid = { 0, 0, 0, 25, 0, 25, 0, 25 },
-              tileid = 459
-            },
-            {
-              wangid = { 0, 0, 0, 25, 0, 25, 0, 0 },
-              tileid = 460
-            },
-            {
-              wangid = { 0, 25, 0, 25, 0, 25, 0, 0 },
-              tileid = 461
-            },
-            {
-              wangid = { 0, 25, 0, 25, 0, 25, 0, 25 },
-              tileid = 462
-            },
-            {
-              wangid = { 0, 0, 0, 24, 0, 0, 0, 0 },
-              tileid = 463
-            },
-            {
-              wangid = { 0, 0, 0, 24, 0, 24, 0, 0 },
-              tileid = 464
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 24, 0, 0 },
-              tileid = 465
-            },
-            {
-              wangid = { 0, 0, 0, 21, 0, 0, 0, 0 },
-              tileid = 466
-            },
-            {
-              wangid = { 0, 0, 0, 21, 0, 21, 0, 0 },
-              tileid = 467
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 21, 0, 0 },
-              tileid = 468
-            },
-            {
-              wangid = { 0, 0, 0, 23, 0, 0, 0, 0 },
-              tileid = 469
-            },
-            {
-              wangid = { 0, 0, 0, 23, 0, 23, 0, 0 },
-              tileid = 470
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 23, 0, 0 },
-              tileid = 471
-            },
-            {
-              wangid = { 0, 27, 0, 27, 0, 0, 0, 0 },
-              tileid = 480
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 27, 0, 27 },
-              tileid = 482
-            },
-            {
-              wangid = { 0, 26, 0, 26, 0, 0, 0, 0 },
-              tileid = 483
-            },
-            {
-              wangid = { 0, 26, 0, 26, 0, 26, 0, 26 },
-              tileid = 484
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 26, 0, 26 },
-              tileid = 485
-            },
-            {
-              wangid = { 0, 25, 0, 25, 0, 25, 0, 25 },
-              tileid = 491
-            },
-            {
-              wangid = { 0, 25, 0, 25, 0, 25, 0, 25 },
-              tileid = 492
-            },
-            {
-              wangid = { 0, 25, 0, 25, 0, 25, 0, 25 },
-              tileid = 493
-            },
-            {
-              wangid = { 0, 25, 0, 25, 0, 25, 0, 25 },
-              tileid = 494
-            },
-            {
-              wangid = { 0, 24, 0, 24, 0, 0, 0, 0 },
-              tileid = 495
-            },
-            {
-              wangid = { 0, 24, 0, 24, 0, 24, 0, 24 },
-              tileid = 496
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 24, 0, 24 },
-              tileid = 497
-            },
-            {
-              wangid = { 0, 21, 0, 21, 0, 0, 0, 0 },
-              tileid = 498
-            },
-            {
-              wangid = { 0, 21, 0, 21, 0, 21, 0, 21 },
-              tileid = 499
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 21, 0, 21 },
-              tileid = 500
-            },
-            {
-              wangid = { 0, 23, 0, 23, 0, 0, 0, 0 },
-              tileid = 501
-            },
-            {
-              wangid = { 0, 23, 0, 23, 0, 23, 0, 23 },
-              tileid = 502
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 23, 0, 23 },
-              tileid = 503
-            },
-            {
-              wangid = { 0, 10, 0, 11, 0, 10, 0, 10 },
-              tileid = 504
-            },
-            {
-              wangid = { 0, 10, 0, 11, 0, 11, 0, 10 },
-              tileid = 505
-            },
-            {
-              wangid = { 0, 10, 0, 10, 0, 11, 0, 10 },
-              tileid = 506
-            },
-            {
-              wangid = { 0, 11, 0, 10, 0, 11, 0, 11 },
-              tileid = 507
-            },
-            {
-              wangid = { 0, 11, 0, 11, 0, 10, 0, 11 },
-              tileid = 508
-            },
-            {
-              wangid = { 0, 27, 0, 0, 0, 0, 0, 0 },
-              tileid = 512
-            },
-            {
-              wangid = { 0, 27, 0, 0, 0, 0, 0, 27 },
-              tileid = 513
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 27 },
-              tileid = 514
-            },
-            {
-              wangid = { 0, 26, 0, 0, 0, 0, 0, 0 },
-              tileid = 515
-            },
-            {
-              wangid = { 0, 26, 0, 0, 0, 0, 0, 26 },
-              tileid = 516
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 26 },
-              tileid = 517
-            },
-            {
-              wangid = { 0, 0, 0, 25, 0, 0, 0, 0 },
-              tileid = 524
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 25, 0, 0 },
-              tileid = 525
-            },
-            {
-              wangid = { 0, 24, 0, 0, 0, 0, 0, 0 },
-              tileid = 527
-            },
-            {
-              wangid = { 0, 24, 0, 0, 0, 0, 0, 24 },
-              tileid = 528
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 24 },
-              tileid = 529
-            },
-            {
-              wangid = { 0, 21, 0, 0, 0, 0, 0, 0 },
-              tileid = 530
-            },
-            {
-              wangid = { 0, 21, 0, 0, 0, 0, 0, 21 },
-              tileid = 531
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 21 },
-              tileid = 532
-            },
-            {
-              wangid = { 0, 23, 0, 0, 0, 0, 0, 0 },
-              tileid = 533
-            },
-            {
-              wangid = { 0, 23, 0, 0, 0, 0, 0, 23 },
-              tileid = 534
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 23 },
-              tileid = 535
-            },
-            {
-              wangid = { 0, 11, 0, 11, 0, 10, 0, 10 },
-              tileid = 536
-            },
-            {
-              wangid = { 0, 11, 0, 11, 0, 11, 0, 11 },
-              tileid = 537
-            },
-            {
-              wangid = { 0, 10, 0, 10, 0, 11, 0, 11 },
-              tileid = 538
-            },
-            {
-              wangid = { 0, 10, 0, 11, 0, 11, 0, 11 },
-              tileid = 539
-            },
-            {
-              wangid = { 0, 11, 0, 11, 0, 11, 0, 10 },
-              tileid = 540
-            },
-            {
-              wangid = { 0, 27, 0, 27, 0, 27, 0, 27 },
-              tileid = 544
-            },
-            {
-              wangid = { 0, 27, 0, 27, 0, 27, 0, 27 },
-              tileid = 545
-            },
-            {
-              wangid = { 0, 27, 0, 27, 0, 27, 0, 27 },
-              tileid = 546
-            },
-            {
-              wangid = { 0, 26, 0, 26, 0, 26, 0, 26 },
-              tileid = 547
-            },
-            {
-              wangid = { 0, 26, 0, 26, 0, 26, 0, 26 },
-              tileid = 548
-            },
-            {
-              wangid = { 0, 26, 0, 26, 0, 26, 0, 26 },
-              tileid = 549
-            },
-            {
-              wangid = { 0, 25, 0, 0, 0, 0, 0, 0 },
-              tileid = 556
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 25 },
-              tileid = 557
-            },
-            {
-              wangid = { 0, 24, 0, 24, 0, 24, 0, 24 },
-              tileid = 559
-            },
-            {
-              wangid = { 0, 24, 0, 24, 0, 24, 0, 24 },
-              tileid = 560
-            },
-            {
-              wangid = { 0, 24, 0, 24, 0, 24, 0, 24 },
-              tileid = 561
-            },
-            {
-              wangid = { 0, 21, 0, 21, 0, 21, 0, 21 },
-              tileid = 562
-            },
-            {
-              wangid = { 0, 21, 0, 21, 0, 21, 0, 21 },
-              tileid = 563
-            },
-            {
-              wangid = { 0, 21, 0, 21, 0, 21, 0, 21 },
-              tileid = 564
-            },
-            {
-              wangid = { 0, 22, 0, 0, 0, 22, 0, 22 },
-              tileid = 566
-            },
-            {
-              wangid = { 0, 22, 0, 22, 0, 0, 0, 22 },
-              tileid = 567
-            },
-            {
-              wangid = { 0, 11, 0, 10, 0, 10, 0, 10 },
-              tileid = 568
-            },
-            {
-              wangid = { 0, 11, 0, 10, 0, 10, 0, 11 },
-              tileid = 569
-            },
-            {
-              wangid = { 0, 10, 0, 10, 0, 10, 0, 11 },
-              tileid = 570
-            },
-            {
-              wangid = { 0, 11, 0, 11, 0, 11, 0, 11 },
-              tileid = 571
-            },
-            {
-              wangid = { 0, 11, 0, 11, 0, 11, 0, 11 },
-              tileid = 572
-            },
-            {
-              wangid = { 0, 18, 0, 0, 0, 18, 0, 18 },
-              tileid = 580
-            },
-            {
-              wangid = { 0, 18, 0, 18, 0, 0, 0, 18 },
-              tileid = 581
-            },
-            {
-              wangid = { 0, 0, 0, 22, 0, 22, 0, 22 },
-              tileid = 598
-            },
-            {
-              wangid = { 0, 22, 0, 22, 0, 22, 0, 0 },
-              tileid = 599
-            },
-            {
-              wangid = { 0, 10, 0, 10, 0, 10, 0, 10 },
-              tileid = 600
-            },
-            {
-              wangid = { 0, 10, 0, 10, 0, 10, 0, 10 },
-              tileid = 601
-            },
-            {
-              wangid = { 0, 10, 0, 10, 0, 10, 0, 10 },
-              tileid = 602
-            },
-            {
-              wangid = { 0, 10, 0, 10, 0, 10, 0, 10 },
-              tileid = 603
-            },
-            {
-              wangid = { 0, 10, 0, 10, 0, 10, 0, 10 },
-              tileid = 604
-            },
-            {
-              wangid = { 0, 0, 0, 18, 0, 18, 0, 18 },
-              tileid = 612
-            },
-            {
-              wangid = { 0, 18, 0, 18, 0, 18, 0, 0 },
-              tileid = 613
-            },
-            {
-              wangid = { 0, 0, 0, 22, 0, 0, 0, 0 },
-              tileid = 629
-            },
-            {
-              wangid = { 0, 0, 0, 22, 0, 22, 0, 0 },
-              tileid = 630
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 22, 0, 0 },
-              tileid = 631
-            },
-            {
-              wangid = { 0, 0, 0, 18, 0, 0, 0, 0 },
-              tileid = 643
-            },
-            {
-              wangid = { 0, 0, 0, 18, 0, 18, 0, 0 },
-              tileid = 644
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 18, 0, 0 },
-              tileid = 645
-            },
-            {
-              wangid = { 0, 22, 0, 22, 0, 0, 0, 0 },
-              tileid = 661
-            },
-            {
-              wangid = { 0, 22, 0, 22, 0, 22, 0, 22 },
-              tileid = 662
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 22, 0, 22 },
-              tileid = 663
-            },
-            {
-              wangid = { 0, 18, 0, 18, 0, 0, 0, 0 },
-              tileid = 675
-            },
-            {
-              wangid = { 0, 18, 0, 18, 0, 18, 0, 18 },
-              tileid = 676
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 18, 0, 18 },
-              tileid = 677
-            },
-            {
-              wangid = { 0, 22, 0, 0, 0, 0, 0, 0 },
-              tileid = 693
-            },
-            {
-              wangid = { 0, 22, 0, 0, 0, 0, 0, 22 },
-              tileid = 694
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 22 },
-              tileid = 695
-            },
-            {
-              wangid = { 0, 18, 0, 0, 0, 0, 0, 0 },
-              tileid = 707
-            },
-            {
-              wangid = { 0, 18, 0, 0, 0, 0, 0, 18 },
-              tileid = 708
-            },
-            {
-              wangid = { 0, 0, 0, 0, 0, 0, 0, 18 },
-              tileid = 709
-            }
-          }
-        }
-      },
+      terrains = {},
       tilecount = 1024,
       tiles = {
         {
@@ -1998,8 +74,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2038,8 +112,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2079,8 +151,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2110,8 +180,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2149,8 +217,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2188,8 +254,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2228,8 +292,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2273,8 +335,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2314,8 +374,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2357,8 +415,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2398,8 +454,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2441,8 +495,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2484,8 +536,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2525,8 +575,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2556,8 +604,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2587,8 +633,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2618,8 +662,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2649,8 +691,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2680,8 +720,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2711,8 +749,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2742,8 +778,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2773,8 +807,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2804,8 +836,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2835,8 +865,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2866,8 +894,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2897,8 +923,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2928,8 +952,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2959,8 +981,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -2990,8 +1010,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -3021,8 +1039,6 @@ return {
             opacity = 1,
             offsetx = 0,
             offsety = 0,
-            parallaxx = 1,
-            parallaxy = 1,
             properties = {},
             objects = {
               {
@@ -3057,8 +1073,6 @@ return {
       opacity = 1,
       offsetx = 0,
       offsety = 0,
-      parallaxx = 1,
-      parallaxy = 1,
       properties = {},
       encoding = "lua",
       data = {
@@ -3116,8 +1130,6 @@ return {
       opacity = 1,
       offsetx = 0,
       offsety = 0,
-      parallaxx = 1,
-      parallaxy = 1,
       properties = {},
       encoding = "lua",
       data = {
@@ -3175,8 +1187,6 @@ return {
       opacity = 1,
       offsetx = 0,
       offsety = 0,
-      parallaxx = 1,
-      parallaxy = 1,
       properties = {},
       encoding = "lua",
       data = {
@@ -3234,8 +1244,6 @@ return {
       opacity = 1,
       offsetx = 0,
       offsety = 0,
-      parallaxx = 1,
-      parallaxy = 1,
       properties = {},
       encoding = "lua",
       data = {
@@ -3285,13 +1293,11 @@ return {
       type = "objectgroup",
       draworder = "topdown",
       id = 8,
-      name = "object (collision)",
+      name = "object (under)",
       visible = true,
       opacity = 1,
       offsetx = 0,
       offsety = 0,
-      parallaxx = 1,
-      parallaxy = 1,
       properties = {
         ["collidable"] = true
       },
@@ -3363,8 +1369,6 @@ return {
       opacity = 1,
       offsetx = 0,
       offsety = 0,
-      parallaxx = 1,
-      parallaxy = 1,
       properties = {},
       objects = {
         {
@@ -3372,8 +1376,8 @@ return {
           name = "player",
           type = "",
           shape = "rectangle",
-          x = 652,
-          y = 774,
+          x = 640,
+          y = 768,
           width = 64,
           height = 64,
           rotation = 0,
@@ -3395,8 +1399,6 @@ return {
       opacity = 1,
       offsetx = 0,
       offsety = 0,
-      parallaxx = 1,
-      parallaxy = 1,
       properties = {},
       encoding = "lua",
       data = {
